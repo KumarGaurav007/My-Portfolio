@@ -1,4 +1,5 @@
 import { Button } from "@/components/Button";
+import { useNavigate } from 'react-router-dom';
 import {
     ArrowRight,
     ChevronDown,
@@ -31,6 +32,7 @@ const skills = [
 ];
 
 function Hero() {
+    const navigate = useNavigate();
     return (
         <section className=" relative min-h-screen flex items-center overflow-hidden">
 
@@ -93,7 +95,7 @@ function Hero() {
 
                         {/* CTAs */}
                         <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-                            <Button size="lg">
+                            <Button size="lg" onClick={() => navigate('/contact')}>
                                 Contact Me <ArrowRight className="w-5 h-5" />
                             </Button>
                             <AnimatedBorderButton >

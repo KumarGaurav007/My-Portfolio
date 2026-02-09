@@ -1,4 +1,5 @@
 import { Button } from "@/components/Button";
+import { useNavigate } from 'react-router-dom';
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
@@ -10,6 +11,7 @@ const navLinks = [
 ];
 
 function Navbar () {
+    const navigate = useNavigate();
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
 
@@ -53,7 +55,7 @@ function Navbar () {
 
                 {/* CTA Button */}
                 <div className="hidden md:block">
-                    <Button size="sm" >Contact Me</Button>
+                    <Button size="sm" onClick={() => navigate('/contact')}>Contact Me</Button>
                 </div>
 
                 {/* Mobile Menu Button */}
