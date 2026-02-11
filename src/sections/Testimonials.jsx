@@ -10,30 +10,7 @@ const testimonials = [
         avatar:
             "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
     },
-    {
-        quote:
-            "Working with Pedro was a game-changer for our project. He delivered ahead of schedule with code quality that set a new standard for our team.",
-        author: "Michael Rodriguez",
-        role: "Product Manager, Digital Solutions",
-        avatar:
-            "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop",
-    },
-    {
-        quote:
-            "Pedro's expertise in React and TypeScript helped us rebuild our entire frontend in record time. His architectural decisions continue to pay dividends.",
-        author: "Emily Watson",
-        role: "Engineering Lead, StartUp Labs",
-        avatar:
-            "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop",
-    },
-    {
-        quote:
-            "Not only is Pedro technically brilliant, but he's also a fantastic communicator and team player. He elevated everyone around him.",
-        author: "David Kim",
-        role: "CEO, Innovation Hub",
-        avatar:
-            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
-    },
+    
 ];
 
 export const Testimonials = () => {
@@ -95,7 +72,9 @@ export const Testimonials = () => {
                                 <Quote className="w-6 h-6 text-primary-foreground" />
                             </div>
 
-                            <blockquote className="text-xl md:text-2xl font-medium leading-relaxed mb-8 pt-4">
+                            <div className="text-xl md:text-2xl font-medium leading-relaxed mb-8 pt-4">Sorry, Currently I don't have any Testimonials 😊.</div>
+
+                            {/* <blockquote className="text-xl md:text-2xl font-medium leading-relaxed mb-8 pt-4">
                                 "{testimonials[activeIdx].quote}"
                             </blockquote>
 
@@ -113,7 +92,7 @@ export const Testimonials = () => {
                                         {testimonials[activeIdx].role}
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
 
                         {/* Testimonials Navigation */}

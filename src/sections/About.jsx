@@ -31,7 +31,7 @@ const education = [
         period: "2023 — Present",
         degree: "B.Tech CSE (Full Stack Development & DevOps)",
         institution: "DIT University , Dehradun.",
-        grades: "Grade : 7.98 CGPA",
+        grades: "Grade : 8.00 CGPA",
         description:
             "As an active member of Google Developer Student Clubs (GDSC) Dehradun,I actively participated in learning new-age technologies, collaborated within the developer community, and helped organize technical sessions, mentorship programs, and coding contests..",
         skills: ["React", "Tailwind CSS", "Docker", "Mongo DB", "Git / GitHub"],
@@ -93,14 +93,14 @@ export const About = () => {
 
                         <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
                             <p>
-                                I'm a passionate software engineer with over 5 years of
-                                experience crafting digital products that make a difference. My
+                                I'm a passionate software engineer with a curious mind
+                                for crafting digital products that make a difference. My
                                 journey started with a curiosity for how things work on the web,
-                                and it has evolved into a deep expertise in modern frontend
+                                and it has evolved into a deep experties in modern frontend
                                 technologies.
                             </p>
                             <p>
-                                I specialize in React, Next.js, and TypeScript, building
+                                I specialize in React, Next.js, TailWind CSS, and TypeScript, building
                                 everything from sleek landing pages to complex enterprise
                                 applications. My approach combines technical excellence with a
                                 keen eye for design and user experience.
@@ -108,7 +108,7 @@ export const About = () => {
                             <p>
                                 When I'm not coding, you'll find me exploring new technologies,
                                 contributing to open-source projects, or sharing knowledge with
-                                the developer community.
+                                the developer community and peers.
                             </p>
                         </div>
 

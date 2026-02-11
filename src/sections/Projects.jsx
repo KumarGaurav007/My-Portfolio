@@ -20,22 +20,22 @@ const projects = [
         github: "https://github.com/KumarGaurav007/React-Projects/tree/main/05CurrencyConverter",
     },
     {
-        title: "AI Writing Assistant",
+        title: "🤖 AI-Based Chatbot using Python",
         description:
-            "An intelligent writing tool powered by GPT-4, helping users create better content faster.",
-        image: "/projects/project3.png",
-        tags: ["React", "OpenAI", "Python", "FastAPI"],
-        link: "#",
-        github: "#",
+            "An intelligent AI-powered chatbot built using Python, Flask, and a local DialoGPT model from Hugging Face Transformers.",
+        image: "/projects/chatbot.png",
+        tags: ["Python", "OpenAI", "Hugging Face", "Flask", "Transformers"],
+        link: "https://local-chat-bot-gaurav.vercel.app/",
+        github: "https://github.com/KumarGaurav007/Local-chatBot",
     },
     {
-        title: "Project Management Tool",
+        title: "📱 Calculator App",
         description:
-            "A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
-        image: "/projects/project4.png",
-        tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
-        link: "#",
-        github: "#",
+            "I have made a fully functional Calculator With Attractive User Interface. Technology used are HTML, CSS and JAVA SCRIPT.",
+        image: "/projects/calculator.png",
+        tags: ["HTML", "CSS", "Java Script"],
+        link: "https://calculator-app-gaurav.vercel.app/",
+        github: "https://github.com/KumarGaurav007/Calculator_App_project_04",
     },
 ];
 
