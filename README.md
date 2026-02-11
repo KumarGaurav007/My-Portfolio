@@ -2,6 +2,9 @@
 
 A modern, responsive and production-ready **personal portfolio** built to showcase projects, skills and experience with **smooth UI interactions** and **clean architecture**.
 
+### 🔗 [Check Live Portfolio ](https://portfolio-gaurav-dev.vercel.app/)
+👨‍💻 Author: Gaurav Kumar
+
 ---
 
 ## 🔗 Live Demo (GIF)
