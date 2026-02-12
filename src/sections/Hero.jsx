@@ -48,6 +48,7 @@ function Hero() {
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 {[...Array(30)].map((_, i) => (
                     <div
+                        key={i}
                         className="absolute w-1.5 h-1.5 rounded-full opacity-60"
                         style={{
                             backgroundColor: "#20B2A6",
@@ -57,6 +58,7 @@ function Hero() {
                                 }s ease-in-out infinite`,
                             animationDelay: `${Math.random() * 5}s`,
                         }}
+                        
                     />
                 ))}
             </div>
@@ -109,10 +111,12 @@ function Hero() {
                                 { icon: Github, href: "https://github.com/KumarGaurav007" },
                                 { icon: Linkedin, href: "https://www.linkedin.com/in/gaurav-kumar-25-oct/" },
                                 { icon: Twitter, href: "#" },
-                            ].map((social, idx) => (
+                            ].map((social) => (
                                 <a
-                                    key={idx}
+                                    key={social.href}
                                     href={social.href}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
                                 >
                                     {<social.icon className="w-5 h-5" />}

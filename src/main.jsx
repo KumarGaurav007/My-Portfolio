@@ -1,4 +1,4 @@
-import { StrictMode } from 'react'
+import { StrictMode, useEffect, useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
@@ -9,35 +9,48 @@ import { Projects } from './sections/Projects'
 import { Experience } from './sections/Experience'
 import { Testimonials } from './sections/Testimonials'
 import { Contact } from './sections/Contact'
+import Loader from './components/Loader'
+
+
+function Root() {
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => setLoading(false), 900);
+        return () => clearTimeout(timer);
+    }, []);
+
+    return loading ? <Loader /> : <RouterProvider router={router} />;
+}
 
 const router = createBrowserRouter([
     {
         path: '/',
-        element: <App/>,
+        element: <App />,
         children: [
             {
                 path: "",
-                element: <Hero/>
+                element: <Hero />
             },
             {
                 path: "about",
-                element: <About/>
+                element: <About />
             },
             {
                 path: "projects",
-                element: <Projects/>
+                element: <Projects />
             },
             {
                 path: "experience",
-                element: <Experience/>
+                element: <Experience />
             },
             {
                 path: "testimonials",
-                element: <Testimonials/>
+                element: <Testimonials />
             },
             {
                 path: "contact",
-                element: <Contact/>
+                element: <Contact />
             }
         ]
     }
@@ -45,7 +58,6 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
-        <RouterProvider router = {router} />
-        
+        <Root />
     </StrictMode>,
 )

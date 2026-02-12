@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://dev-gauravkumar.vercel.app/</loc>
+  </url>
+
+  <url>
+    <loc>https://dev-gauravkumar.vercel.app/about</loc>
+  </url>
+
+  <url>
+    <loc>https://dev-gauravkumar.vercel.app/projects</loc>
+  </url>
+
+  <url>
+    <loc>https://dev-gauravkumar.vercel.app/experience</loc>
+  </url>
+
+  <url>
+    <loc>https://dev-gauravkumar.vercel.app/testimonials</loc>
+  </url>
+
+  <url>
+    <loc>https://dev-gauravkumar.vercel.app/contact</loc>
+  </url>
+
+</urlset>

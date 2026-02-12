@@ -1,5 +1,5 @@
 import { Button } from "@/components/Button";
-import { useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
@@ -10,7 +10,7 @@ const navLinks = [
     { href: "testimonials", label: "Testimonials" },
 ];
 
-function Navbar () {
+function Navbar() {
     const navigate = useNavigate();
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
@@ -31,24 +31,24 @@ function Navbar () {
                 }  z-50`}
         >
             <nav className="container mx-auto px-6 flex items-center justify-between">
-                <a
-                    href="/"
+                <NavLink
+                    to={"/"}
                     className="text-xl font-bold tracking-tight hover:text-primary"
                 >
                     GK<span className="text-primary"> • </span>
-                </a>
+                </NavLink>
 
                 {/* Desktop Nav */}
                 <div className="hidden md:flex items-center gap-1">
                     <div className="glass rounded-full px-2 py-1 flex items-center gap-1">
                         {navLinks.map((link, index) => (
-                            <a
-                                href={link.href}
+                            <NavLink
+                                to={link.href}
                                 key={index}
                                 className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground rounded-full hover:bg-surface"
                             >
                                 {link.label}
-                            </a>
+                            </NavLink>
                         ))}
                     </div>
                 </div>
@@ -72,14 +72,14 @@ function Navbar () {
                 <div className="md:hidden glass-strong animate-fade-in">
                     <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
                         {navLinks.map((link, index) => (
-                            <a
-                                href={link.href}
+                            <NavLink
+                                to={link.href}
                                 key={index}
                                 onClick={() => setIsMobileMenuOpen(false)}
                                 className="text-lg text-muted-foreground hover:text-foreground py-2"
                             >
                                 {link.label}
-                            </a>
+                            </NavLink>
                         ))}
 
                         <Button onClick={() => setIsMobileMenuOpen(false)}>

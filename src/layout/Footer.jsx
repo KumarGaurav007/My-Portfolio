@@ -1,4 +1,5 @@
 import { Github, Linkedin, Twitter, Heart } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const socialLinks = [
     { icon: Github, href: "https://github.com/KumarGaurav007", label: "GitHub" },
@@ -22,9 +23,12 @@ export const Footer = () => {
                 <div className="flex flex-col md:flex-row items-center justify-between gap-8">
                     {/* Logo & Copyright */}
                     <div className="text-center md:text-left">
-                        <a href="/" className="text-xl font-bold tracking-tight hover:text-primary">
+                        <Link
+                            to={"/"}
+                            className="text-xl font-bold tracking-tight hover:text-primary"
+                        >
                             GK<span className="text-primary"> •</span>
-                        </a>
+                        </Link>
                         <p className="text-sm text-muted-foreground mt-2">
                             © {currentYear} Gaurav Kumar                                                                                                                       . All rights reserved.
                         </p>
@@ -33,13 +37,13 @@ export const Footer = () => {
                     {/* Links */}
                     <nav className="flex flex-wrap justify-center gap-6">
                         {footerLinks.map((link) => (
-                            <a
+                            <Link
+                                to={link.href}
                                 key={link.href}
-                                href={link.href}
                                 className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                             >
                                 {link.label}
-                            </a>
+                            </Link>
                         ))}
                     </nav>
 
@@ -49,6 +53,8 @@ export const Footer = () => {
                             <a
                                 key={social.label}
                                 href={social.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 aria-label={social.label}
                                 className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all"
                             >
