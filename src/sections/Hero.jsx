@@ -110,7 +110,7 @@ function Hero() {
                             {[
                                 { icon: Github, href: "https://github.com/KumarGaurav007" },
                                 { icon: Linkedin, href: "https://www.linkedin.com/in/gaurav-kumar-25-oct/" },
-                                { icon: Twitter, href: "#" },
+                                { icon: Twitter, href: "https://x.com/GAURAVKUMA41032" },
                             ].map((social) => (
                                 <a
                                     key={social.href}

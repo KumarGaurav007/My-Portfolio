@@ -1,10 +1,10 @@
-import { Github, Linkedin, Twitter, Heart } from "lucide-react";
+import { Github, Linkedin, Twitter } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const socialLinks = [
     { icon: Github, href: "https://github.com/KumarGaurav007", label: "GitHub" },
     { icon: Linkedin, href: "https://www.linkedin.com/in/gaurav-kumar-25-oct/", label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" },
+    { icon: Twitter, href: "https://x.com/GAURAVKUMA41032", label: "Twitter" },
 ];
 
 const footerLinks = [
